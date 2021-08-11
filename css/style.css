@@ -1,5 +1,6 @@
 body {
   background-color: #202020;
+  margin: 0;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 h1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #b18637;
   margin-bottom: 0.25em;
 }
@@ -20,35 +21,77 @@ h2 {
   color: #ffffff;
   font-size: 1em;
   margin-top: 0;
-  margin-bottom: 0;
 }
 
 h3 {
-  color: #b18637;
+  color: #ffffff;
 }
 
 a {
   color: #b18637;
 }
 
-section {
-  margin-bottom: 3em;
+a:hover {
+  color: #ffffff;
+  cursor: pointer;
 }
 
 p {
   margin: 0;
 }
 
-.fit-picture {
-  width: 200px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+header {
+  width: 100%;
+  border-bottom: 5px solid #b18637;
+  position: fixed;
+  background-color: #353535;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 18%;
 }
 
-.cv {
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .header-container .header-text {
+  display: block;
+}
+
+header .header-container .avatar {
+  float: left;
+  width: 8em;
+  margin-top: 0.8em;
+  margin-left: 1em;
+}
+
+header .header-container .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
   max-width: 900px;
   margin: 0 auto;
+  padding-top: 12%;
+}
+
+footer {
+  border-top: 5px solid #b18637;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  background-color: #353535;
 }
 
 .contacts {
@@ -84,6 +127,9 @@ p {
 @media (max-width: 575px) {
   .experience {
     display: block;
+  }
+  .footer {
+    width: 100%;
   }
 }
 

@@ -1,13 +1,16 @@
 $primary-color: #b18637;
 $secondary-color: #ffffff;
 $bg-color: #202020;
+$line: 5px solid $primary-color;
 
 body {
     background-color: $bg-color;
+    margin: 0;
 }
 
 html {
     font-family: Roboto, sans-serif;
+
 }
 
 * {
@@ -17,7 +20,7 @@ html {
 
 h1 {
     // заголовок
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: $primary-color;
     margin-bottom: 0.25em;
 }
@@ -27,34 +30,70 @@ h2 {
     color: $secondary-color;
     font-size: 1em; // размер шрифта
     margin-top: 0; // отступ сверху
-    margin-bottom: 0; // отступ снизу
 }
 
 h3 {
-    color: $primary-color;
+    color: $secondary-color;
 }
 
 a {
     color: $primary-color;
 }
-
-section{
-    margin-bottom: 3em;
+a:hover {
+    color: $secondary-color;
+    cursor: pointer;
 }
+
 p {
     margin: 0;
 }
 
-.fit-picture {
-width: 200px;
-border-radius: 3px;
-margin-bottom: 10px;
-margin-top: 10px;
+header {
+    width: 100%;
+    border-bottom: $line;
+    position: fixed;
+    background-color: #353535;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 18%;
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+
+        .header-text {
+            display: block;
+        }
+
+        .avatar {
+            float: left;
+            width: 8em;
+            margin-top: 0.8em;
+            margin-left: 1em;
+        }
+
+        .avatar img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
 }
 
-.cv {
+main {
     max-width: 900px;
     margin: 0 auto;
+    padding-top: 12%;
+}
+
+footer {
+    border-top: $line;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: #353535;
 }
 
 .contacts {
@@ -85,9 +124,10 @@ margin-top: 10px;
     .experience {
         display: block;
     }
+    .footer {
+        width: 100%;
+    }
 }
-ddd
-
 .container {
     max-width: 1000px;
     margin-left: auto;
@@ -104,7 +144,7 @@ ddd
         justify-content: space-between;
         margin-bottom: 20px;
         letter-spacing: 0.03em;
-        //?text-align: center; 
+        //?text-align: center;
     }
     .table-header {
         background-color: #606161;
