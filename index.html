@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/png">
+    </head>
+    <title>My CV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--
+    // что-то тут
+    * что-то тут
+    TODO: Alt + b, e - створення дочірнього елемента
+    TODO: Shift + Alt + T - переклад
+    !использую препроцесор SASS с синтаксисом SCSS
+    ? что-то тут
+-->
+
+<body>
+    <div class="cv">
+        <section>
+            <h1>Artur Kaidanskyi</h1>
+            <h2>Full Stack Developer</h2>
+            <img class="fit-picture" src="./images/me.jpeg" alt="I am so handsome you should have seen">
+            <div class="contacts">
+                <div class="contact">
+                    <p class="contact__type">
+                        GitHub
+                    </p>
+                    <p class="contact__value">
+                        <a href="https://github.com/kaitur">github.com/kaitur</a>
+                    </з>
+                </div>
+                <div class="contact">
+                    <p class="contact__type">
+                        Email
+                    </p>
+                    <p class="contact__value">
+                        <a href="mailto:arturka@tahometer.com">arturka@tahometer.com</a>
+                    </p>
+                </div>
+            </div>
+            <p class="description">
+                IT Professional with over 0 years of experience specializing in <b>Web development</b>.
+                I can create effective web applications with high support level.
+                My greatest strength is business awareness, which enables me to
+                permanently streamline infrstructure and application.
+            </p>
+        </section>
+        <section>
+            <h3>Experience</h3>
+
+            <div class="experience">
+                <p class="experience__date">19.07.2021 - present</p>
+                <div class="experience__description">
+                    <p class="experience__name">Intern FullStack Developer</p>
+                    <p class="experience__company">InterLink LLC</p>
+                    <div class="experience__details">
+                        <ul>
+                            <li>Create MVC applications</li>
+                            <li>Create frontend using Angular</li>
+                            <li>Create databases using MS SQL</li>
+                            <li>Create Reports using Reporting Services and MS SQL</li>
+                            <li>Support various applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="experience">
+                <p class="experience__date">01.05.2020 - 20.07.2021</p>
+
+                <div class="experience__description">
+                    <p class="experience__name">Web Developer</p>
+                    <p class="experience__company">Small company</p>
+                    <div class="experience__details">
+                        <ul>
+                            <li>Create websites using Wordpress</li>
+                            <li>Make content for blogs</li>
+                            <li>Create online calculators</li>
+                            <li>Support various applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3>Skills</h3>
+            <div class="container">
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-1">Technology</div>
+                        <div class="col col-2">Use Time</div>
+                        <div class="col col-3">Level Of Proficiency</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">C#</div>
+                        <div class="col col-2" data-label="Use Time">312 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">fluent</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">JavaScript</div>
+                        <div class="col col-2" data-label="Use Time">9595 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">intermediate</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">SQL</div>
+                        <div class="col col-2" data-label="Use Time">411 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">fluent</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">Figma</div>
+                        <div class="col col-2" data-label="Use Time">7710 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">advanced</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">Angular</div>
+                        <div class="col col-2" data-label="Use Time">4830 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">intermediate</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">Sketch</div>
+                        <div class="col col-2" data-label="Use Time">234 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">advanced</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">HTML/CSS</div>
+                        <div class="col col-2" data-label="Use Time">666 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">fluent</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">TypeScript</div>
+                        <div class="col col-2" data-label="Use Time">971 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">intermediate</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">Java</div>
+                        <div class="col col-2" data-label="Use Time">252 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">basic</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">PHP</div>
+                        <div class="col col-2" data-label="Use Time">15 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">advanced</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">C</div>
+                        <div class="col col-2" data-label="Use Time">3327 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">basic</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Technology">C++</div>
+                        <div class="col col-2" data-label="Use Time">691 hours</div>
+                        <div class="col col-3" data-label="Level Of Proficiency">intermediate</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
